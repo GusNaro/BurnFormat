@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B49B665E-3D33-4816-8AEB-F39200C08D0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BurnFormat</RootNamespace>
+    <AssemblyName>BurnFormat</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>BURNER.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Enum.cs" />
+    <Compile Include="Form\Burner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Burner.Designer.cs">
+      <DependentUpon>Burner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Format.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Format.Designer.cs">
+      <DependentUpon>Format.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\IMAPI2.cs" />
+    <Compile Include="Class\Item.cs" />
+    <Compile Include="Form\Informasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Informasi.Designer.cs">
+      <DependentUpon>Informasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Form\Tentang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Tentang.Designer.cs">
+      <DependentUpon>Tentang.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form\Burner.resx">
+      <DependentUpon>Burner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Format.resx">
+      <DependentUpon>Format.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Informasi.resx">
+      <DependentUpon>Informasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Form\Tentang.resx">
+      <DependentUpon>Tentang.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BURN.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FILE.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FOLDER.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HAPUS.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FORMAT.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CD-RW.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BD.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BD-DL.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BD-RE DL.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BD-RE.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CD-R.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD+R DL.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD+R.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD+RW.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD-R DL.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD-R.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD-RAM.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD-RW.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HD DVD DL.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HD DVD.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ISO.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GAGAL.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SUKSES.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXIT.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REFRESH.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NEXT.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TANYA.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BURNER.ico" />
+    <None Include="Resources\Logo STIKOM.jpg" />
+    <None Include="Resources\RAM.ico" />
+    <None Include="Resources\DVD-ROM.ico" />
+    <None Include="Resources\CD-ROM.ico" />
+    <None Include="Resources\QUESTION.wav" />
+    <None Include="Resources\GALAT.wav" />
+    <None Include="Resources\CAUTION.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

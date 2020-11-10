@@ -1,0 +1,9 @@
+d:\dokumen\visual studio 2010\Projects\Burn\Burn\bin\Debug\Burn.exe
+d:\dokumen\visual studio 2010\Projects\Burn\Burn\bin\Debug\Burn.pdb
+d:\dokumen\visual studio 2010\Projects\Burn\Burn\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\dokumen\visual studio 2010\Projects\Burn\Burn\obj\x86\Debug\Burn.Burner.resources
+d:\dokumen\visual studio 2010\Projects\Burn\Burn\obj\x86\Debug\Burn.Properties.Resources.resources
+d:\dokumen\visual studio 2010\Projects\Burn\Burn\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+d:\dokumen\visual studio 2010\Projects\Burn\Burn\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+d:\dokumen\visual studio 2010\Projects\Burn\Burn\obj\x86\Debug\Burn.exe
+d:\dokumen\visual studio 2010\Projects\Burn\Burn\obj\x86\Debug\Burn.pdb
